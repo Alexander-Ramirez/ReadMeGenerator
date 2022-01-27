@@ -31,7 +31,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "Choose the license that you would like to attach.",
-        choices: ["MIT License", "Apache License 2.0", "Coffeeware"]
+        choices: ["MIT License", "Apache License 2.0", "Coffeeware", ""]
     },
     {
         type: "input",

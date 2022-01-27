@@ -55,8 +55,8 @@ function generateMarkdown(answers) {
   ${answers.usage}
 
   ## License
-  ${renderLicenseLink(answers)} License
-  ${renderLicenseBadge(answers)}
+  ${renderLicenseLink(license)} License
+  ${renderLicenseBadge(license)}
 
   ## Contributers
   ${answers.contributers}
