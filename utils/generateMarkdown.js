@@ -37,6 +37,36 @@ function generateMarkdown(answers) {
   ## Title
   ${answers.title}
 
+  ## Description
+  ${answers.description}
+
+  ## Table of Contents
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [License](#License)
+  - [Contributers](#Contributers)
+  - [Email](#Email)
+
+  ## Installation
+  ${answers.installation}
+
+  ## Usage
+  ${answers.usage}
+
+  ## License
+  ${renderLicenseLink(answers)} License
+  ${renderLicenseBadge(answers)}
+
+  ## Contributers
+  ${answers.contributers}
+
+  ## Email
+  ${answers.email}
+
+  ## GitHub Accounts
+  ${answers.username}
+
 `;
 }
 

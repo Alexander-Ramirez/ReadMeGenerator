@@ -22,6 +22,32 @@ const questions = [
         name: "installation",
         message: "How do you install this project?",
     },
+    {
+        type: "input",
+        name: "usage",
+        message: "What is the usage of this project? " 
+     },
+     {
+        type: "list",
+        name: "license",
+        message: "Choose the license that you would like to attach.",
+        choices: ["MIT License", "Apache License 2.0", "Coffeeware"]
+    },
+    {
+        type: "input",
+        name:"contributers",
+        message:"Who contributed on this project?"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Please enter your email."
+    },
+    {
+        type: "input",
+        name: "username",
+        message: "Please enter your Github UserName."
+    },
 ];
 
 // TODO: Create a function to initialize app and write README file
