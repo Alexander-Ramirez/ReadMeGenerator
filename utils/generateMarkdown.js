@@ -1,6 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
+function renderLicenseBadge(answers) {
+  const { license } = answers;
   if (license === "Coffeeware") {
     return `![License: Coffeeware](https://raw.githubusercontent.com/Sonic853/coffeeware-license/master/coffeeware-logo.png)`
   } else if (license === "Apache License") {
@@ -14,7 +15,8 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
+function renderLicenseLink(answers) {
+  const { license } = answers;
   if (license === "Coffeeware") {
     return `[Coffeeware](https://github.com/Sonic853/coffeeware-license)`
   } else if (license === "Apache License") {
@@ -55,8 +57,8 @@ function generateMarkdown(answers) {
   ${answers.usage}
 
   ## License
-  ${renderLicenseLink(license)} License
-  ${renderLicenseBadge(license)}
+  ${renderLicenseBadge(answers.license)}
+  ${renderLicenseLink(answers.license)} 
 
   ## Contributers
   ${answers.contributers}
